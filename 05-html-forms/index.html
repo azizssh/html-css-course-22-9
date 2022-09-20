@@ -1,0 +1,81 @@
+<!-- html:5 + Return = creates a boilerplate HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- User(client/browser) sends data request -> Server -> sends data to DB Server -> Response -> Client --> 
+    <!-- Server needs name + value (value is provided with your input)
+    Specify the name in your inputs -->
+    <form
+      action="https://post-form-receiver.netlify.app/.netlify/functions/form-receiver"
+      method="post"
+    >
+    <!-- POST - means to create a resource -->
+      <label for="full-name">Full Name</label>
+      <input id="full-name" type="text" name="name" />
+      <label for="comment">Your comment here</label>
+      <textarea name="comment" id="comment" cols="30" rows="10" maxlength="200">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam modi facere totam magni aspernatur dolore porro sit deleniti incidunt laudantium sed in ab, iusto blanditiis ut eligendi dicta suscipit!
+          </textarea
+      >
+      <label for="country-of-birth">Country of Birth</label>
+      <select id="country-of-birth" name="country-of-birth">
+        <option value="usa">USA</option>
+        <option value="netherlands">Netherlands</option>
+        <option value="kyrgyzstan">Kyrgyzstan</option>
+      </select>
+      <input type="checkbox" name="promo" id="promo" />
+      <label for="promo">Sign up for Promotions</label>
+      <input type="checkbox" name="news" id="news" />
+      <label for="news">Sign up for Newsletter</label>
+      <hr />
+      <label>Are you 21+ years old</label>
+      <input type="radio" id="yes-answer" value="yes" name="age-question" />
+      <label for="yes-answer">Yes</label>
+      <input type="radio" id="no-answer" value="no" name="age-question" />
+      <label for="no-answer">No</label>
+      <input
+        type="radio"
+        id="decline-answer"
+        value="decline-answer"
+        name="age-question"
+      />
+      <label for="decline-answer">Decline to answer</label>
+      <input type="color" name="color"/>
+      <label for="date-of-birth">Date of Birth</label>
+      <input type="date" id="date-of-birth" name="date-of-birth"/>
+      <hr />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"/>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password"/>
+
+      <label for="file-upload">Upload your profile image</label>
+      <input type="file" id="file-upload" name="file"/>
+      <label for="work-experience">Your work experience in years</label>
+      <input
+      name="work-experience"
+        type="number"
+        id="work-experience"
+        min="0"
+        max="50"
+        value="0"
+        step="1"
+      />
+      <hr />
+      <input type="range" min="0" max="50" step="1" name="range"/>
+      <input type="time" />
+      <button type="submit">
+        <img
+          src="https://previews.123rf.com/images/sarahdesign/sarahdesign1410/sarahdesign141003026/32958756-submit-button.jpg"
+          width="50px"
+        />Submit my data
+      </button>
+    </form>
+  </body>
+</html>

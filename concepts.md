@@ -100,6 +100,8 @@
     * <form>, action, method
     * [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
     * [An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+    * HTTP Method
+    * HTTPS HTTP with encryption
     * <input> [<input>: The Input (Form Input) element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
     * `checkbox`, `radio`, `tel` pattern,
     * <fieldset> <legend>
@@ -109,7 +111,6 @@
     * <select>
     * <option>
     * <button> [<button> vs. <input type="button" />. Which to use?](https://stackoverflow.com/questions/469059/button-vs-input-type-button-which-to-use)
-    * 
 
 ## Responsive Web
     * RWD - Responsive Web Design
