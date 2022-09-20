@@ -27,7 +27,7 @@
       action="https://post-form-receiver.netlify.app/.netlify/functions/form-receiver"
       method="post"
       id="example-form"
-    > 
+    >
       <!-- Simple text input -->
       <label for="full-name">Full Name</label>
       <input
@@ -40,7 +40,7 @@
 
       <!-- Textarea comment -->
       <label for="comment">Your comment here</label>
-      <br>
+      <br />
       <textarea name="comment" id="comment" cols="30" rows="10" maxlength="200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam modi facere totam magni aspernatur dolore porro sit deleniti incidunt laudantium sed in ab, iusto blanditiis ut eligendi dicta suscipit!
           </textarea
@@ -52,13 +52,19 @@
         <option value="netherlands">Netherlands</option>
         <option value="kyrgyzstan">Kyrgyzstan</option>
       </select>
-      <br>
+      <br />
 
-      <!-- Checkboxes -->
-      <input type="checkbox" name="promo" id="promo" />
-      <label for="promo">Sign up for Promotions</label>
-      <input type="checkbox" name="news" id="news" />
-      <label for="news">Sign up for Newsletter</label>
+      <!-- Fieldset -->
+      <fieldset>
+        <legend>Subscriptions</legend>
+
+        <!-- Checkboxes -->
+        <input type="checkbox" name="promo" id="promo" />
+        <label for="promo">Sign up for Promotions</label>
+        <input type="checkbox" name="news" id="news" />
+        <label for="news">Sign up for Newsletter</label>
+      </fieldset>
+
       <br />
       <label>Are you 21+ years old</label>
 
@@ -74,32 +80,32 @@
         name="age-question"
       />
       <label for="decline-answer">Decline to answer</label>
-      <br>
+      <br />
 
       <!-- Color picker -->
       <label for="color-picker">Your favorite color</label>
-      <input type="color" name="color" id="color-picker"/>
-      <br>
+      <input type="color" name="color" id="color-picker" />
+      <br />
 
       <!-- Date -->
       <label for="date-of-birth">Date of Birth</label>
       <input type="date" id="date-of-birth" name="date-of-birth" />
-      <br>
+      <br />
 
       <!-- Email -->
       <label for="email">Email</label>
       <input type="email" id="email" name="email" />
-      <br>
+      <br />
 
       <!-- Password -->
       <label for="password">Password</label>
       <input type="password" id="password" name="password" />
-      <br>
+      <br />
 
       <!-- File upload -->
       <label for="file-upload">Upload your profile image</label>
       <input type="file" id="file-upload" name="file" />
-      <br>
+      <br />
 
       <!-- Number  -->
       <label for="work-experience">Your work experience in years</label>
@@ -112,17 +118,24 @@
         value="0"
         step="1"
       />
-      <br>
+      <br />
 
       <!-- Range slider -->
       <label for="range-slider">Range Slider</label>
-      <input id="range-slider" type="range" min="0" max="50" step="1" name="range" />
-      <br>
+      <input
+        id="range-slider"
+        type="range"
+        min="0"
+        max="50"
+        step="1"
+        name="range"
+      />
+      <br />
 
       <!-- Time -->
       <label for="time-picker">Time Picker</label>
-      <input type="time" name="time-picker" id="time-picker"/>
-      <br>
+      <input type="time" name="time-picker" id="time-picker" />
+      <br />
 
       <!-- Submit Button -->
       <button type="submit">
@@ -133,7 +146,7 @@
       </button>
 
       <!-- Simple Button -->
-      <input type="button" value="Simple Button">
+      <input type="button" value="Simple Button" />
     </form>
   </body>
 </html>
