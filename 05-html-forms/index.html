@@ -6,46 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="" />
     <style>
-        body {
-            background: #FFFF16;
-        }
+      body {
+        background: #ffff16;
+      }
 
-        .block-level {
-            /* to make inline elements block */
-            display: block;
-        }
+      .block-level {
+        /* to make inline elements block */
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <!-- User(client/browser) sends data request -> Server -> sends data to DB Server -> Response -> Client --> 
+    <!-- User(client/browser) sends data request -> Server -> sends data to DB Server -> Response -> Client -->
     <!-- Server needs name + value (value is provided with your input)
     Specify the name in your inputs -->
+    <!-- POST - means to create a resource -->
     <form
       action="https://post-form-receiver.netlify.app/.netlify/functions/form-receiver"
       method="post"
-    >
-    <!-- POST - means to create a resource -->
+      id="example-form"
+    > 
+      <!-- Simple text input -->
       <label for="full-name">Full Name</label>
-      <input id="full-name" type="text" name="name" class="block-level" placeholder="Your name here"/>
+      <input
+        id="full-name"
+        type="text"
+        name="name"
+        class="block-level"
+        placeholder="Your name here"
+      />
+
+      <!-- Textarea comment -->
       <label for="comment">Your comment here</label>
+      <br>
       <textarea name="comment" id="comment" cols="30" rows="10" maxlength="200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam modi facere totam magni aspernatur dolore porro sit deleniti incidunt laudantium sed in ab, iusto blanditiis ut eligendi dicta suscipit!
           </textarea
       >
+      <!-- Dropdown list of countries -->
       <label for="country-of-birth" class="block-level">Country of Birth</label>
       <select id="country-of-birth" name="country-of-birth">
         <option value="usa">USA</option>
         <option value="netherlands">Netherlands</option>
         <option value="kyrgyzstan">Kyrgyzstan</option>
       </select>
+      <br>
+
+      <!-- Checkboxes -->
       <input type="checkbox" name="promo" id="promo" />
       <label for="promo">Sign up for Promotions</label>
       <input type="checkbox" name="news" id="news" />
       <label for="news">Sign up for Newsletter</label>
-      <hr />
+      <br />
       <label>Are you 21+ years old</label>
+
+      <!-- Radiobuttons -->
       <input type="radio" id="yes-answer" value="yes" name="age-question" />
       <label for="yes-answer">Yes</label>
       <input type="radio" id="no-answer" value="no" name="age-question" />
@@ -57,20 +74,37 @@
         name="age-question"
       />
       <label for="decline-answer">Decline to answer</label>
-      <input type="color" name="color"/>
-      <label for="date-of-birth">Date of Birth</label>
-      <input type="date" id="date-of-birth" name="date-of-birth"/>
-      <hr />
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email"/>
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password"/>
+      <br>
 
+      <!-- Color picker -->
+      <label for="color-picker">Your favorite color</label>
+      <input type="color" name="color" id="color-picker"/>
+      <br>
+
+      <!-- Date -->
+      <label for="date-of-birth">Date of Birth</label>
+      <input type="date" id="date-of-birth" name="date-of-birth" />
+      <br>
+
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+      <br>
+
+      <!-- Password -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+      <br>
+
+      <!-- File upload -->
       <label for="file-upload">Upload your profile image</label>
-      <input type="file" id="file-upload" name="file"/>
+      <input type="file" id="file-upload" name="file" />
+      <br>
+
+      <!-- Number  -->
       <label for="work-experience">Your work experience in years</label>
       <input
-      name="work-experience"
+        name="work-experience"
         type="number"
         id="work-experience"
         min="0"
@@ -78,15 +112,28 @@
         value="0"
         step="1"
       />
-      <hr />
-      <input type="range" min="0" max="50" step="1" name="range"/>
-      <input type="time" />
+      <br>
+
+      <!-- Range slider -->
+      <label for="range-slider">Range Slider</label>
+      <input id="range-slider" type="range" min="0" max="50" step="1" name="range" />
+      <br>
+
+      <!-- Time -->
+      <label for="time-picker">Time Picker</label>
+      <input type="time" name="time-picker" id="time-picker"/>
+      <br>
+
+      <!-- Submit Button -->
       <button type="submit">
         <img
           src="https://previews.123rf.com/images/sarahdesign/sarahdesign1410/sarahdesign141003026/32958756-submit-button.jpg"
           width="50px"
         />Submit my data
       </button>
+
+      <!-- Simple Button -->
+      <input type="button" value="Simple Button">
     </form>
   </body>
 </html>
