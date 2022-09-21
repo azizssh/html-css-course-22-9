@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      /* p {
+            float: right;
+
+            width: 90%;
+            border: 100px solid red;
+        } */
+      /* max-width: 800px;
+        min-width: 600px; */
+      /* vh & vw always refer to screen height & width respectively */
+      /* width % comes from parent */
+      /* 1px - fixed sized unit 1/96 inch 96px * 1/96 = 1inch */
+      /* CSS px != device px */
+      /* em - relative to the parent container that has font-size changed */
+      /* rem - relates to root element font-size, are good for font-sizes */
+      /*
+      em - good for padding and margins
+      */
+      /* %, px, vh - viewport height, vw - viewport width,  em - element, rem - root element - CSS unit */
+      /* fr - CSS grid */
+      /* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
+      html {
+        font-size: 20px;
+      }
+      .root {
+        width: 50vw;
+        height: 50vh;
+        border: 10px solid red;
+        margin-left: 25vw;
+        margin-top: 25vh;
+      }
+      body {
+      }
+      .p-container {
+        font-size: 1.5rem;
+   
+      }
+
+      p {
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid red;
+        text-align: justify;
+        font-size: 1.5rem; /* 20px *1.5=30px*/
+        padding: 1em; /* */
+      }
+      .second-p {
+        font-size: 2rem;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-container">
+        Random Text
+      <div class="inner-container">
+        <p>
+          Lorem ipsum dolor sit amet
+        </p>
+        <p class="second-p">
+          Lorem ipsum dolor sit amet
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
